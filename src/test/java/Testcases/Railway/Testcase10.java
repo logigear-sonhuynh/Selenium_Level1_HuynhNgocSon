@@ -19,7 +19,7 @@ public class Testcase10 extends BaseTest{
 
         System.out.println("3. Enter information of the created account in Pre-condition");
         System.out.println("4. Click on \"Register\" button");
-        registerPage.register(Constant.USERNAME,Constant.PASSWORD,Constant.PASSWORD,Constant.PID);
+        registerPage.Register(Constant.USERNAME,Constant.PASSWORD,Constant.PASSWORD,Constant.PID);
 
         String actualMsg=registerPage.getRegisterErrorMSg_Used();
         String expectedMsg=Constant.ERROR_USED_MAIL;

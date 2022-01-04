@@ -16,13 +16,13 @@ public class Testcase04 extends BaseTest{
 
         System.out.println("2. Click on \"Book ticket\" tab");
         BookTicketPage bookTicketPage = new BookTicketPage();
-        bookTicketPage.gotoBookticketPage();
+        bookTicketPage.gotoBookTicketPage();
 
         System.out.println("3. Login with valid account");
         LoginPage loginPage = new LoginPage();
         loginPage.login(Constant.USERNAME,Constant.PASSWORD);
 
-        String actualMsg =bookTicketPage.getBookticket();
+        String actualMsg =bookTicketPage.getBookTicket();
         String expectedMsg =Constant.TITLE_BOOK_TICKET;
 
         Assert.assertEquals(actualMsg,expectedMsg,"User cannot navigate to book ticket page");

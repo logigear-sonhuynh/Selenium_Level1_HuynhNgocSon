@@ -16,9 +16,9 @@ public class BaseTest {
         Constant.WEBDRIVER = new ChromeDriver();
     }
 
-    @AfterMethod
-    public void afterMethod(){
-        System.out.println("Post-Condition");
-        Constant.WEBDRIVER.quit();
-    }
+//    @AfterMethod
+//    public void afterMethod(){
+//        System.out.println("Post-Condition");
+//        Constant.WEBDRIVER.quit();
+//    }
 }

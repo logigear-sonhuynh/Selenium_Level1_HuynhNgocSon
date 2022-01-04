@@ -4,17 +4,20 @@ import Comman.Constant;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import java.sql.Time;
+
 public class GeneralPage {
 
     //locators
     private final By tabLogin = By.xpath("//div[@id='menu']//a[@href='/Account/Login.cshtml']");
     private final By tabLogout = By.xpath("//div[@id='menu']//a[@href='/Account/Logout']");
     private final By lblWelcomeMessage = By.xpath("//div[@class='account']/strong");
-    private final By tabBookticket = By.xpath("//div[@id='menu']//a[@href='/Page/BookTicketPage.cshtml']");
-    private final By tabMyticket = By.xpath("//div[@id='menu']//a[@href='/Page/ManageTicket.cshtml']");
+    private final By tabBookTicket = By.xpath("//div[@id='menu']//a[@href='/Page/BookTicketPage.cshtml']");
+    private final By tabMyTicket = By.xpath("//div[@id='menu']//a[@href='/Page/ManageTicket.cshtml']");
     private final By tabRegister = By.xpath("//div[@id='menu']//a[@href='/Account/Register.cshtml']");
     private final By tabChangePassword = By.xpath("//div[@id='menu']//a[@href='/Account/ChangePassword.cshtml']");
     private final By tabContact = By.xpath("//div[@id='menu']//a[@href='/Page/Contact.cshtml']");
+    private final By tabTimetable=By.xpath("//div[@id='menu']//a[@href='TrainTimeListPage.cshtml']");
     // Element
     protected WebElement getTabLogin(){
         return Constant.WEBDRIVER.findElement(tabLogin);
@@ -25,11 +28,11 @@ public class GeneralPage {
     protected WebElement getLblWelcomeMessage(){
         return Constant.WEBDRIVER.findElement(lblWelcomeMessage);
     }
-    protected WebElement getTabBookticket(){
-        return Constant.WEBDRIVER.findElement(tabBookticket);
+    protected WebElement getTabBookTicket(){
+        return Constant.WEBDRIVER.findElement(tabBookTicket);
     }
-    protected WebElement getTabMyticket(){
-        return Constant.WEBDRIVER.findElement(tabMyticket);
+    protected WebElement getTabMyTicket(){
+        return Constant.WEBDRIVER.findElement(tabMyTicket);
     }
     protected WebElement getTabRegister(){
         return Constant.WEBDRIVER.findElement(tabRegister);
@@ -39,6 +42,9 @@ public class GeneralPage {
     }
     protected WebElement getTabContact(){
         return Constant.WEBDRIVER.findElement(tabContact);
+    }
+    protected WebElement getTabTimetable(){
+        return Constant.WEBDRIVER.findElement(tabTimetable);
     }
     //Methods
     public String getWelcomeMessage()
@@ -50,28 +56,25 @@ public class GeneralPage {
         this.getTabLogin().click();
         return new LoginPage();
     }
-    public BookTicketPage gotoBookticketPage(){
-        this.getTabBookticket().click();
-        return new BookTicketPage();
+    public void gotoBookTicketPage(){
+        this.getTabBookTicket().click();
     }
-    public MyticketPage gotoMyticketPage(){
-        this.getTabMyticket().click();
-        return new MyticketPage();
+    public void gotoMyTicketPage(){
+        this.getTabMyTicket().click();
     }
-    public RegisterPage gotoRegisterPage(){
+    public void gotoRegisterPage(){
         this.getTabRegister().click();
-        return new RegisterPage();
     }
-    public ChangePasswordPage gotoChangePasswordPage(){
+    public void gotoChangePasswordPage(){
         this.getTabChangePassword().click();
-        return new ChangePasswordPage();
     }
-    public ContactPage gotoContactPage(){
+    public void gotoContactPage(){
         this.getTabContact().click();
-        return new ContactPage();
     }
-    public LogoutPage gotoLogoutPage(){
+    public void gotoLogoutPage(){
         this.getTabLogout().click();
-        return new LogoutPage();
+    }
+    public void gotoTimetablePage(){
+        this.getTabTimetable().click();
     }
 }

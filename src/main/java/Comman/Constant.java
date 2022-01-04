@@ -16,6 +16,9 @@ public class Constant {
     public static String PASSWORD_REGISTER="123456789";
     public static String CONFIRM_PASSWORD="123456789";
     public static String PID="324323425";
+    public static String PASSWORD_BLANK ="";
+    public static String CONFIRM_PASSWORD_BLANK="";
+    public static String PID_BLANK="";
 
     // account hasn't been activated
     public static String USERNAME2="nguyenvanc@gmail.com";
@@ -35,6 +38,8 @@ public class Constant {
     public static String CONFIRM_PASSWORD_1="b456";
 
     //Error
+    public static String TITLE_CHECK_PRICE_DN_SG ="Ticket price from Đà Nẵng to Sài Gòn";
+    public static String BookTicket_successfully = "Ticket booked successfully!";
     public static String ERROR_CHANGE_PASSWORD="Password change failed. Please correct the errors and try again.";
     public static String ERROR_USED_MAIL ="This email address is already in use.";
     public static String ERROR_LOGIN_USER ="Invalid username or password. Please try again.";
@@ -43,5 +48,9 @@ public class Constant {
     public static String ERROR_LOGIN = "There was a problem with your login and/or errors exist in your form.";
     public static String TITLE_BOOK_TICKET ="Book ticket form";
     public static String TC05="You have used 4 out of 5 login attempts. After all 5 have been used, you will be unable to login for 15 minutes.";
+    public static String ERROR_REGISTER_PASSWORD_LENGTH ="Invalid password length";
+    public static String ERROR_REGISTER_ID_LENGTH="Invalid ID length";
+    public static String ERROR_REGISTER_BLANK="There're errors in the form. Please correct the errors and try again.";
+    public static String ERROR_TICKET_AMOUNT="You have booked 10 tickets. You can book no more.";
 }
 

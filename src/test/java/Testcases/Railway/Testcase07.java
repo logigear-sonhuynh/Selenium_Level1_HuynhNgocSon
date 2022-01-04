@@ -18,7 +18,7 @@ public class Testcase07 extends BaseTest{
         registerPage.gotoRegisterPage();
 
         System.out.println("3. Enter valid information into all fields");
-        registerPage.register(Constant.EMAIL_REGISTER,Constant.PASSWORD_REGISTER,Constant.CONFIRM_PASSWORD,Constant.PID);
+        registerPage.Register(Constant.EMAIL_REGISTER,Constant.PASSWORD_REGISTER,Constant.CONFIRM_PASSWORD,Constant.PID);
 
         String actualMsg=registerPage.getRegister_Sign_Up_Success();
         String expected =Constant.REGISTER;
