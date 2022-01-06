@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default Suite" duration-ms="12394" started-at="2022-01-04T07:43:46Z" finished-at="2022-01-04T07:43:59Z">
+    <groups>
+    </groups>
+    <test name="SeleniumLevel1" duration-ms="12394" started-at="2022-01-04T07:43:46Z" finished-at="2022-01-04T07:43:59Z">
+      <class name="Testcases.Railway.TC06">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Testcases.Railway.TC06@3f0ee7cb]" name="beforeMethod" is-config="true" duration-ms="6032" started-at="2022-01-04T07:43:46Z" finished-at="2022-01-04T07:43:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="TC06()[pri:0, instance:Testcases.Railway.TC06@3f0ee7cb]" name="TC06" duration-ms="6316" started-at="2022-01-04T07:43:52Z" description="User is redirected to Home page after logging out" finished-at="2022-01-04T07:43:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC06 -->
+      </class> <!-- Testcases.Railway.TC06 -->
+    </test> <!-- SeleniumLevel1 -->
+  </suite> <!-- Default Suite -->
+</testng-results>
